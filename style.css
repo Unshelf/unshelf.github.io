@@ -31,14 +31,15 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 10%;
-  max-width: 50px;
+  max-width: 30px;
+  font-weight: 700;
 }
 
 a:after{
   content: " ";
   position: relative;
   width: 0;
-  height: 2px;
+  height: 5px;
   background-color: #cec155;
   bottom: -10px;
   transition: all 0.3s ease-in;
@@ -71,7 +72,7 @@ a:hover:after{
 
 @media (min-width: 1281px) {
   .profiles {
-    width: 30vw;
+    width: 20vw;
   }
 }
 
