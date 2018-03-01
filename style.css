@@ -30,7 +30,8 @@ a {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  width: 5vw;
+  width: 10%;
+  max-width: 50px;
 }
 
 a:after{
@@ -38,7 +39,7 @@ a:after{
   position: relative;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #cec155;
   bottom: -10px;
   transition: all 0.3s ease-in;
   left: 50%;
@@ -66,9 +67,27 @@ a:hover:after{
   padding-top: 10vh;
   display: flex;
   justify-content: space-around;
-  width: 50vw;
 }
 
+@media (min-width: 1281px) {
+  .profiles {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .profiles {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  
+  .profiles {
+    width: 80vw;
+  }
+  
+}
 .profiles-container {
   text-align: center;
   display: flex;
