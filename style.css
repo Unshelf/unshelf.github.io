@@ -2,31 +2,31 @@ body {
   margin: 0;
   padding: 0;
   background-color: #212121;
-  color: #cec155;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #fffce5;
   font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-div {
-  color: #cec155;
+h1 {
+  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
-a {
+a.underlined-link {
   color: #cec155;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s;
   height: 40px;
-  text-align:center;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  width: 10%;
-  max-width: 30px;
   font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a:after{
+a.underlined-link:after{
   content: " ";
   position: relative;
   width: 0;
@@ -36,60 +36,91 @@ a:after{
   transition: all 0.3s ease-in;
   left: 50%;
 }
-a:hover:after{
+a.underlined-link:hover:after{
   width: 100%;
   left: 0;
 }
 
+.logo {
+  margin: 5vh;
+}
+
+.contact-us {
+  position: absolute;
+  right: 5vh;
+  top: 5vh;
+  font-size: 26px;
+  height: 59px;
+  width: 59px;
+  border: 3px solid #cec155;
+  display: flex;
+  color: #cec155;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
 
 .container {
-  text-align: center;
-  height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.container img {
-  object-fit: contain;
-}
-
-.profiles {
-  padding-top: 10vh;
-  display: flex;
-  justify-content: space-around;
+  padding: 50px 10vh;
 }
 
 @media (min-width: 1281px) {
-  .profiles {
-    width: 20vw;
+  .container {
+    width: 40%;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .profiles {
-    width: 40vw;
+  .container {
+    width: 50%;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 796px){
   
-  .profiles {
-    width: 80vw;
+  .container {
+    width: 50%;
   }
   
 }
-.profiles-container {
-  text-align: center;
+
+@media (max-width: 796px){
+  
+  .container {
+    width: auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+  
+}
+
+.people {
+  list-style-type: none;
+  padding: 80px 0;
+  margin: 0;
+}
+
+.people li{
   display: flex;
-  justify-content: center;
+  padding: 20px 0;
 }
 
-.coming-soon {
-  font-family: serif;
-  font-style: italic;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
+.people li .person-name {
+  width: 20%;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+
 }
+
+.people li .person-description {
+  display: inline-block;
+  width: 75%;
+}
+
