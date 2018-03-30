@@ -113,6 +113,7 @@ a.underlined-link:hover:after{
 
 .people li .person-name {
   width: 20%;
+  padding-right: 5%;
   display: inline-block;
   flex-direction: column;
   justify-content: center;
@@ -121,6 +122,6 @@ a.underlined-link:hover:after{
 
 .people li .person-description {
   display: inline-block;
-  width: 75%;
+  width: 70%;
 }
 
