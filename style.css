@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #212121;
   color: #fffce5;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -41,17 +41,30 @@ a.underlined-link:hover:after{
   left: 0;
 }
 
-.logo {
-  margin: 5vh;
+.top-bar {
+  background-color: #212121;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
 }
 
+.logo-container {
+  margin: 5vh 0 5vh 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100%;
+}
+.logo {
+
+}
 .contact-us {
-  position: absolute;
-  right: 5vh;
-  top: 5vh;
   font-size: 26px;
   height: 59px;
   width: 59px;
+  margin: 5vh 5vh 5vh 0;
   border: 3px solid #cec155;
   display: flex;
   color: #cec155;
@@ -68,6 +81,13 @@ a.underlined-link:hover:after{
   flex-direction: column;
   justify-content: center;
   padding: 50px 10vh;
+  margin-top:10vh;
+  
+}
+
+.container p {
+
+  line-height: 1.5rem;
 }
 
 @media (min-width: 1281px) {
@@ -117,11 +137,11 @@ a.underlined-link:hover:after{
   display: inline-block;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .people li .person-description {
   display: inline-block;
   width: 70%;
+  padding-left: 10px;
 }
 
