@@ -137,11 +137,11 @@ a.underlined-link:hover:after{
   display: inline-block;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .people li .person-description {
   display: inline-block;
   width: 70%;
+  padding-left: 10px;
 }
 
